@@ -1,0 +1,99 @@
+
+
+.bookmark-form {
+  width: 100%;
+  max-width: 520px;             
+  
+  margin: 50px auto;
+  padding: 34px 32px;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.14);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+
+.form-title {
+  margin-bottom: 22px;
+  font-size: clamp(20px, 2.5vw, 22px);
+  font-weight: 700;
+  color: #111827;
+}
+
+
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;     
+  border-radius: 12px;
+  border: 1.5px solid #e5e7eb;
+  font-size: 16px;
+  color: #111827;
+  transition: border 0.25s ease, box-shadow 0.25s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #111827;
+  
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.1);
+}
+
+
+
+.form-btn {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #111827, #1f2933);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35);
+}
+
+.form-btn:active {
+  transform: scale(0.97);
+}
+
+
+@media (max-width: 480px) {
+  .bookmark-form {
+    max-width: 100%;
+    margin: 24px 16px;
+    padding: 26px 20px;
+    border-radius: 16px;
+  }
+
+  .form-title {
+    font-size: 18px;
+  }
+
+  .form-input,
+  .form-btn {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
+}

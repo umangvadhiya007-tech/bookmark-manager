@@ -1,0 +1,46 @@
+.navbar {
+  background: linear-gradient(135deg, #111827, #1f2933);
+  color: #ffffff;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.navbar-title {
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #f9fafb;
+  white-space: nowrap;
+}
+
+/* Highlight */
+.navbar-title span {
+  color: #4f46e5;
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 14px 18px;
+  }
+
+  .navbar-title {
+    font-size: 18px;
+    letter-spacing: 0.2px;
+  }
+}
+
+/* 📱 Very Small Screens */
+@media (max-width: 360px) {
+  .navbar {
+    padding: 12px 14px;
+  }
+
+  .navbar-title {
+    font-size: 16px;
+  }
+}
